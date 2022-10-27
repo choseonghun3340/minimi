@@ -1,0 +1,585 @@
+= MINIMI API Docs
+:sectnums:
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 2
+:toc-title: 목차
+:source-highlighter: highlightjs
+
+***
+== 카테고리
+=== 카테고리 목록 조회 [GET]
+==== Request
+.httpie-request
+include::{snippets}/get-categoryTitles/httpie-request.adoc[]
+.http-request
+include::{snippets}/get-categoryTitles/http-request.adoc[]
+.request-body
+include::{snippets}/get-categoryTitles/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/get-categoryTitles/http-response.adoc[]
+.response-body
+include::{snippets}/get-categoryTitles/response-body.adoc[]
+.response-fields
+include::{snippets}/get-categoryTitles/response-fields.adoc[]
+
+=== 카테고리 상세 조회 [GET]
+==== Request
+.httpie-request
+include::{snippets}/get-category/httpie-request.adoc[]
+.http-request
+include::{snippets}/get-category/http-request.adoc[]
+.path-parameters
+include::{snippets}/get-category/path-parameters.adoc[]
+.request-parameters
+include::{snippets}/get-category/request-parameters.adoc[]
+.request-body
+include::{snippets}/get-category/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/get-category/http-response.adoc[]
+.response-body
+include::{snippets}/get-category/response-body.adoc[]
+.response-fields
+include::{snippets}/get-category/response-fields.adoc[]
+
+=== 카테고리 생성 [POST]
+==== Request
+.httpie-request
+include::{snippets}/post-category/httpie-request.adoc[]
+.http-request
+include::{snippets}/post-category/http-request.adoc[]
+.request-body
+include::{snippets}/post-category/request-body.adoc[]
+.request-fields
+include::{snippets}/post-category/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/post-category/http-response.adoc[]
+.response-body
+include::{snippets}/post-category/response-body.adoc[]
+
+=== 카테고리 수정 [PATCH]
+==== Request
+.httpie-request
+include::{snippets}/patch-category/httpie-request.adoc[]
+.http-request
+include::{snippets}/patch-category/http-request.adoc[]
+.path-parameters
+include::{snippets}/patch-category/path-parameters.adoc[]
+.request-body
+include::{snippets}/patch-category/request-body.adoc[]
+.request-fields
+include::{snippets}/patch-category/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/patch-category/http-response.adoc[]
+.response-body
+include::{snippets}/patch-category/response-body.adoc[]
+
+== 운동시설
+=== 운동시설 목록 조회 [GET]
+==== Request
+.httpie-request
+include::{snippets}/get-nearFacility/httpie-request.adoc[]
+.http-request
+include::{snippets}/get-nearFacility/http-request.adoc[]
+.request-parameters
+include::{snippets}/get-nearFacility/request-parameters.adoc[]
+.request-body
+include::{snippets}/get-nearFacility/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/get-nearFacility/http-response.adoc[]
+.response-body
+include::{snippets}/get-nearFacility/response-body.adoc[]
+.response-fields
+include::{snippets}/get-nearFacility/response-fields.adoc[]
+
+=== 운동시설 상세 조회 [GET]
+==== Request
+.httpie-request
+include::{snippets}/get-facility/httpie-request.adoc[]
+.http-request
+include::{snippets}/get-facility/http-request.adoc[]
+.path-parameters
+include::{snippets}/get-facility/path-parameters.adoc[]
+.request-body
+include::{snippets}/get-facility/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/get-facility/http-response.adoc[]
+.response-body
+include::{snippets}/get-facility/response-body.adoc[]
+.response-fields
+include::{snippets}/get-facility/response-fields.adoc[]
+
+=== 운동시설 생성 [POST]
+==== Request
+.httpie-request
+include::{snippets}/post-facility/httpie-request.adoc[]
+.http-request
+include::{snippets}/post-facility/http-request.adoc[]
+.request-parts
+include::{snippets}/post-facility/request-parts.adoc[]
+.request-body
+include::{snippets}/post-facility/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/post-facility/http-response.adoc[]
+.response-body
+include::{snippets}/post-facility/response-body.adoc[]
+
+=== 운동시설 수정 [PATCH]
+==== Request
+.httpie-request
+include::{snippets}/patch-facility/httpie-request.adoc[]
+.http-request
+include::{snippets}/patch-facility/http-request.adoc[]
+.request-parts
+include::{snippets}/patch-facility/request-parts.adoc[]
+.request-body
+include::{snippets}/patch-facility/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/patch-facility/http-response.adoc[]
+.response-body
+include::{snippets}/patch-facility/response-body.adoc[]
+
+=== 운동시설 삭제 [DELETE]
+==== Request
+.httpie-request
+include::{snippets}/delete-facility/httpie-request.adoc[]
+.http-request
+include::{snippets}/delete-facility/http-request.adoc[]
+.path-parameters
+include::{snippets}/delete-facility/path-parameters.adoc[]
+.request-body
+include::{snippets}/delete-facility/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/delete-facility/http-response.adoc[]
+.response-body
+include::{snippets}/delete-facility/response-body.adoc[]
+
+== 운동시설 리뷰
+=== 운동시설 리뷰 조회 [GET]
+==== Request
+.httpie-request
+include::{snippets}/get-reviewPage/httpie-request.adoc[]
+.http-request
+include::{snippets}/get-reviewPage/http-request.adoc[]
+.path-parameters
+include::{snippets}/get-reviewPage/path-parameters.adoc[]
+.request-parameters
+include::{snippets}/get-reviewPage/request-parameters.adoc[]
+.request-body
+include::{snippets}/get-reviewPage/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/get-reviewPage/http-response.adoc[]
+.response-body
+include::{snippets}/get-reviewPage/response-body.adoc[]
+.response-fields
+include::{snippets}/get-reviewPage/response-fields.adoc[]
+
+=== 운동시설 리뷰 생성 [POST]
+==== Request
+.httpie-request
+include::{snippets}/post-review/httpie-request.adoc[]
+.http-request
+include::{snippets}/post-review/http-request.adoc[]
+.request-body
+include::{snippets}/post-review/request-body.adoc[]
+.request-fields
+include::{snippets}/post-review/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/post-review/http-response.adoc[]
+.response-body
+include::{snippets}/post-review/response-body.adoc[]
+
+=== 운동시설 리뷰 수정 [PATCH]
+==== Request
+.httpie-request
+include::{snippets}/patch-review/httpie-request.adoc[]
+.http-request
+include::{snippets}/patch-review/http-request.adoc[]
+.path-parameters
+include::{snippets}/patch-review/path-parameters.adoc[]
+.request-body
+include::{snippets}/patch-review/request-body.adoc[]
+.request-fields
+include::{snippets}/patch-review/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/patch-review/http-response.adoc[]
+.response-body
+include::{snippets}/patch-review/response-body.adoc[]
+
+=== 운동시설 리뷰 삭제 [DELETE]
+==== Request
+.httpie-request
+include::{snippets}/delete-review/httpie-request.adoc[]
+.http-request
+include::{snippets}/delete-review/http-request.adoc[]
+.path-parameters
+include::{snippets}/delete-review/path-parameters.adoc[]
+.request-body
+include::{snippets}/delete-review/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/delete-review/http-response.adoc[]
+.response-body
+include::{snippets}/delete-review/response-body.adoc[]
+
+== 운동시설 북마크
+=== 운동시설 북마크 구독 [POST]
+==== Request
+.httpie-request
+include::{snippets}/post-bookmark/httpie-request.adoc[]
+.http-request
+include::{snippets}/post-bookmark/http-request.adoc[]
+.request-body
+include::{snippets}/post-bookmark/request-body.adoc[]
+.request-fields
+include::{snippets}/post-bookmark/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/post-bookmark/http-response.adoc[]
+.response-body
+include::{snippets}/post-bookmark/response-body.adoc[]
+
+=== 운동시설 북마크 취소 [DELETE]
+==== Request
+.httpie-request
+include::{snippets}/delete-bookmark/httpie-request.adoc[]
+.http-request
+include::{snippets}/delete-bookmark/http-request.adoc[]
+.path-parameters
+include::{snippets}/delete-bookmark/path-parameters.adoc[]
+.request-body
+include::{snippets}/delete-bookmark/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/delete-bookmark/http-response.adoc[]
+.response-body
+include::{snippets}/delete-bookmark/response-body.adoc[]
+
+=== 운동시설 북마크 조회 [GET]
+==== Request
+.httpie-request
+include::{snippets}/get-bookmark/httpie-request.adoc[]
+.http-request
+include::{snippets}/get-bookmark/http-request.adoc[]
+.path-parameters
+include::{snippets}/get-bookmark/path-parameters.adoc[]
+.request-body
+include::{snippets}/get-bookmark/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/get-bookmark/http-response.adoc[]
+.response-body
+include::{snippets}/get-bookmark/response-body.adoc[]
+.response-fields
+include::{snippets}/get-bookmark/response-fields.adoc[]
+
+== 나의 운동시설
+=== 나의 운동시설 구독 [POST]
+==== Request
+.httpie-request
+include::{snippets}/post-myfacility/httpie-request.adoc[]
+.http-request
+include::{snippets}/post-myfacility/http-request.adoc[]
+.request-body
+include::{snippets}/post-myfacility/request-body.adoc[]
+.request-fields
+include::{snippets}/post-myfacility/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/post-myfacility/http-response.adoc[]
+.response-body
+include::{snippets}/post-myfacility/response-body.adoc[]
+
+=== 나의 운동시설 취소 [DELETE]
+==== Request
+.httpie-request
+include::{snippets}/delete-myfacility/httpie-request.adoc[]
+.http-request
+include::{snippets}/delete-myfacility/http-request.adoc[]
+.path-parameters
+include::{snippets}/delete-myfacility/path-parameters.adoc[]
+.request-body
+include::{snippets}/delete-myfacility/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/delete-myfacility/http-response.adoc[]
+.response-body
+include::{snippets}/delete-myfacility/response-body.adoc[]
+
+=== 나의 운동시설 조회 [GET]
+==== Request
+.httpie-request
+include::{snippets}/get-myfacility/httpie-request.adoc[]
+.http-request
+include::{snippets}/get-myfacility/http-request.adoc[]
+.path-parameters
+include::{snippets}/get-myfacility/path-parameters.adoc[]
+.request-body
+include::{snippets}/get-myfacility/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/get-myfacility/http-response.adoc[]
+.response-body
+include::{snippets}/get-myfacility/response-body.adoc[]
+.response-fields
+include::{snippets}/get-myfacility/response-fields.adoc[]
+
+== 출석체크
+=== 출석체크 조회 [GET]
+==== Request
+.httpie-request
+include::{snippets}/get-dailyChecks/httpie-request.adoc[]
+.http-request
+include::{snippets}/get-dailyChecks/http-request.adoc[]
+.path-parameters
+include::{snippets}/get-dailyChecks/path-parameters.adoc[]
+.request-body
+include::{snippets}/get-dailyChecks/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/get-dailyChecks/http-response.adoc[]
+.response-body
+include::{snippets}/get-dailyChecks/response-body.adoc[]
+.response-fields
+include::{snippets}/get-dailyChecks/response-fields.adoc[]
+
+=== 출석체크 제출 [POST]
+==== Request
+.httpie-request
+include::{snippets}/post-dailyCheck/httpie-request.adoc[]
+.http-request
+include::{snippets}/post-dailyCheck/http-request.adoc[]
+.request-body
+include::{snippets}/post-dailyCheck/request-body.adoc[]
+.request-fields
+include::{snippets}/post-dailyCheck/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/post-dailyCheck/http-response.adoc[]
+.response-body
+include::{snippets}/post-dailyCheck/response-body.adoc[]
+.response-fields
+include::{snippets}/post-dailyCheck/response-fields.adoc[]
+
+== 미라클 스코어
+=== 미라클 스코어 조회 [GET]
+==== Request
+.httpie-request
+include::{snippets}/get-miracleScore/httpie-request.adoc[]
+.http-request
+include::{snippets}/get-miracleScore/http-request.adoc[]
+.path-parameters
+include::{snippets}/get-miracleScore/path-parameters.adoc[]
+.request-body
+include::{snippets}/get-miracleScore/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/get-miracleScore/http-response.adoc[]
+.response-body
+include::{snippets}/get-miracleScore/response-body.adoc[]
+.response-fields
+include::{snippets}/get-miracleScore/response-fields.adoc[]
+
+== 회원가입
+=== 계정 생성 [POST]
+==== Request
+.httpie-request
+include::{snippets}/post-member/httpie-request.adoc[]
+.http-request
+include::{snippets}/post-member/http-request.adoc[]
+.request-body
+include::{snippets}/post-member/request-body.adoc[]
+.request-fields
+include::{snippets}/post-member/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/post-member/http-response.adoc[]
+.response-body
+include::{snippets}/post-member/response-body.adoc[]
+
+
+== 로그인
+=== 로그인 시도 [POST]
+==== Request
+.httpie-request
+include::{snippets}/post-login/httpie-request.adoc[]
+.http-request
+include::{snippets}/post-login/http-request.adoc[]
+.request-body
+include::{snippets}/post-login/request-body.adoc[]
+.request-fields
+include::{snippets}/post-login/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/post-login/http-response.adoc[]
+.response-body
+include::{snippets}/post-login/response-body.adoc[]
+
+
+== 게시글
+=== 게시글 조회 [GET]
+==== Request
+.httpie-request
+include::{snippets}/get-contents/httpie-request.adoc[]
+.http-request
+include::{snippets}/get-contents/http-request.adoc[]
+.path-parameters
+include::{snippets}/get-contents/path-parameters.adoc[]
+.request-body
+include::{snippets}/get-contents/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/get-contents/http-response.adoc[]
+.response-body
+include::{snippets}/get-contents/response-body.adoc[]
+.response-fields
+include::{snippets}/get-contents/response-fields.adoc[]
+
+=== 게시글 생성 [POST]
+==== Request
+.httpie-request
+include::{snippets}/post-contents/httpie-request.adoc[]
+.http-request
+include::{snippets}/post-contents/http-request.adoc[]
+.request-body
+include::{snippets}/post-contents/request-body.adoc[]
+.request-fields
+include::{snippets}/post-contents/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/post-contents/http-response.adoc[]
+.response-body
+include::{snippets}/post-contents/response-body.adoc[]
+
+=== 게시글 수정 [PATCH]
+==== Request
+.httpie-request
+include::{snippets}/patch-contents/httpie-request.adoc[]
+.http-request
+include::{snippets}/patch-contents/http-request.adoc[]
+.path-parameters
+include::{snippets}/patch-contents/path-parameters.adoc[]
+.request-body
+include::{snippets}/patch-contents/request-body.adoc[]
+.request-fields
+include::{snippets}/patch-contents/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/patch-contents/http-response.adoc[]
+.response-body
+include::{snippets}/patch-contents/response-body.adoc[]
+
+=== 게시글 삭제 [DELETE]
+==== Request
+.httpie-request
+include::{snippets}/delete-contents/httpie-request.adoc[]
+.http-request
+include::{snippets}/delete-contents/http-request.adoc[]
+.path-parameters
+include::{snippets}/delete-contents/path-parameters.adoc[]
+.request-body
+include::{snippets}/delete-contents/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/delete-contents/http-response.adoc[]
+.response-body
+include::{snippets}/delete-contents/response-body.adoc[]
+
+== 댓글
+=== 댓글 생성 [POST]
+==== Request
+.httpie-request
+include::{snippets}/post-comment/httpie-request.adoc[]
+.http-request
+include::{snippets}/post-comment/http-request.adoc[]
+.request-body
+include::{snippets}/post-comment/request-body.adoc[]
+.request-fields
+include::{snippets}/post-comment/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/post-comment/http-response.adoc[]
+.response-body
+include::{snippets}/post-comment/response-body.adoc[]
+
+=== 댓글 수정 [PATCH]
+==== Request
+.httpie-request
+include::{snippets}/patch-comment/httpie-request.adoc[]
+.http-request
+include::{snippets}/patch-comment/http-request.adoc[]
+.path-parameters
+include::{snippets}/patch-comment/path-parameters.adoc[]
+.request-body
+include::{snippets}/patch-comment/request-body.adoc[]
+.request-fields
+include::{snippets}/patch-comment/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/patch-comment/http-response.adoc[]
+.response-body
+include::{snippets}/patch-comment/response-body.adoc[]
+
+=== 댓글 삭제 [DELETE]
+==== Request
+.httpie-request
+include::{snippets}/delete-comment/httpie-request.adoc[]
+.http-request
+include::{snippets}/delete-comment/http-request.adoc[]
+.path-parameters
+include::{snippets}/delete-comment/path-parameters.adoc[]
+.request-body
+include::{snippets}/delete-comment/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/delete-comment/http-response.adoc[]
+.response-body
+include::{snippets}/delete-comment/response-body.adoc[]
+
+
+
+== 좋아요
+=== 좋아요 생성 [POST]
+==== Request
+.httpie-request
+include::{snippets}/post-likes/httpie-request.adoc[]
+.http-request
+include::{snippets}/post-likes/http-request.adoc[]
+.request-body
+include::{snippets}/post-likes/request-body.adoc[]
+.request-fields
+include::{snippets}/post-likes/request-fields.adoc[]
+==== Response
+.http-response
+include::{snippets}/post-likes/http-response.adoc[]
+.response-body
+include::{snippets}/post-likes/response-body.adoc[]
+
+=== 좋아요 삭제 [DELETE]
+==== Request
+.httpie-request
+include::{snippets}/delete-likes/httpie-request.adoc[]
+.http-request
+include::{snippets}/delete-likes/http-request.adoc[]
+.path-parameters
+include::{snippets}/delete-likes/path-parameters.adoc[]
+.request-body
+include::{snippets}/delete-likes/request-body.adoc[]
+==== Response
+.http-response
+include::{snippets}/delete-likes/http-response.adoc[]
+.response-body
+include::{snippets}/delete-likes/response-body.adoc[]

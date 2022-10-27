@@ -1,0 +1,22 @@
+{
+  "home": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "facilities": [
+    {
+      "id": 1,
+      "body": "Facility A"
+    },
+    {
+      "id": 2,
+      "body": "Facility B"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

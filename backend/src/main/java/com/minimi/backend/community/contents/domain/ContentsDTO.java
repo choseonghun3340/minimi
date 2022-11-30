@@ -1,6 +1,7 @@
 package com.minimi.backend.community.contents.domain;
 
 import com.minimi.backend.community.comment.domain.CommentDTO;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -9,10 +10,14 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@Data
 public class ContentsDTO {
     private Long contentsId;
+    @ApiModelProperty(value="제목", example="제목", required=true)
     private String title;
+    @ApiModelProperty(value="내용", example="내용", required=true)
     private String contents;
+    @ApiModelProperty(value="유저이름", example="유저이름", required=true)
     private String username;
     private LocalDateTime createdAt;
     private int views;

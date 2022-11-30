@@ -6,6 +6,8 @@ import com.minimi.backend.community.contents.domain.ContentsDTO;
 import com.minimi.backend.community.contents.service.ContentsService;
 import com.minimi.backend.exception.BusinessLogicException;
 import com.minimi.backend.exception.ExceptionCode;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
@@ -26,18 +28,26 @@ import java.util.List;
 @RequestMapping("/contents")
 public class ContentsController {
     private final ContentsService contentsService;
-
+    @Operation(summary="게시글 생성", description="/contents\n" +
+            "{\n" +
+            "    \"title\":\"제목\",\n" +
+            "    \"contents\":\"내용\",\n" +
+            "    \"username\": \"유저이름\"\n" +
+            "}")
     @PostMapping("")
     public ResponseEntity<ContentsDTO.response> postContents(@Valid @RequestBody ContentsDTO contentsDTO){
         contentsService.crateContents(contentsDTO);
         return new ResponseEntity(HttpStatus.CREATED);
     }
+
+    @Operation(summary="게시글 생성")
     @PatchMapping("/{contentsId}")
     public ResponseEntity patchContents(@PathVariable Long contentsId,
                                         @RequestBody ContentsDTO.patch contentsPatch){
         contentsService.patchContents(contentsPatch, contentsId);
         return new ResponseEntity(HttpStatus.RESET_CONTENT);
     }
+    @Operation(summary="게시글 생성", description="")
     @GetMapping("/{contentsId}")
     public ResponseEntity<ContentsDTO.response> getContents(@PathVariable Long contentsId, HttpServletRequest request, HttpServletResponse response){
         contentsService.viewCountUp(contentsId,request,response);

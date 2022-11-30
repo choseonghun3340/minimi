@@ -36,8 +36,8 @@ out/
 ### VS Code ###
 .vscode/
 
-##env
-**/application*.*
+###env
+#**/application*.*
 
 ##api-docs
 **/index.html

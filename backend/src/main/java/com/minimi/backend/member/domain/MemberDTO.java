@@ -1,5 +1,6 @@
 package com.minimi.backend.member.domain;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
 import javax.validation.constraints.Email;
@@ -9,8 +10,11 @@ import javax.validation.constraints.NotBlank;
 @Setter
 @NoArgsConstructor
 public class MemberDTO {
+    @ApiModelProperty(value="유저번호", example="유저번호", required=true)
     private Long id;
+    @ApiModelProperty(value="이메일", example="이메일", required=true)
     private String email; //id로 사용
+    @ApiModelProperty(value="유저이름", example="유저이름", required=true)
     private String username; //nickname으로 사용
     private String password;
     private String role;

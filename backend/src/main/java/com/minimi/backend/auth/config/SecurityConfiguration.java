@@ -60,6 +60,7 @@ public class SecurityConfiguration {
                         .antMatchers(HttpMethod.PATCH, "/patchmember/**","/contents/**","/comment/**","/likes").hasRole("USER")
                         .antMatchers(HttpMethod.POST, "/contents/**","/comment/**","/likes").hasRole("USER")
                         .antMatchers(HttpMethod.DELETE, "/contents/**","/comment/**","/likes").hasRole("USER")
+                        .antMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                         .anyRequest().permitAll()
                 );
         return http.build();
@@ -74,7 +75,7 @@ public class SecurityConfiguration {
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(Arrays.asList("34.64.90.204:9060/**","*"));
-        configuration.setAllowedMethods(Arrays.asList("GET","POST", "PATCH", "DELETE"));
+        configuration.setAllowedMethods(Arrays.asList("*"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;

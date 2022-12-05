@@ -79,7 +79,7 @@ public class ContentsController {
     @Operation(summary="게시글 목록조회", description="")
     @GetMapping("")
     public ResponseEntity<Slice<Contents>> getContentsList(@RequestParam int page, Pageable pageable){
-        Slice<Contents> contentsSlice = contentsService.findContentsList(page-1, 3);
+        Slice<Contents> contentsSlice = contentsService.findContentsList(page-1, 10);
         List<Contents> contents = contentsSlice.getContent();
         return new ResponseEntity<>(contentsSlice,HttpStatus.OK);
     }
